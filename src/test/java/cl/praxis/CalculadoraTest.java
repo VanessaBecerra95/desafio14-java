@@ -6,10 +6,10 @@ import java.util.logging.Logger;
 import cl.praxis.model.Calculadora;
 
 public class CalculadoraTest {
-    private static Logger logger = Logger.getLogger(CalculadoraTest.class.getName());
+    private static final Logger logger = Logger.getLogger(CalculadoraTest.class.getName());
+    private static final Calculadora calculadora = new Calculadora();
     private int numero1;
     private int numero2;
-    private Calculadora calculadora = new Calculadora();
 
     @BeforeAll
     public static void init(){
